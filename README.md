@@ -10,6 +10,6 @@ This image provides a development environment to build software for the [Seeed S
     cd ~/mbed_ble/<your application name>
     make
 
-The *local path* designs the folder on your host system which holds the source code of your application.
+The *local path* refers the folder on your host system which holds the source code of your application.
 
   [1]: http://www.seeedstudio.com/depot/Seeed-Micro-BLE-Module-w-CortexM0-Based-nRF51822-SoC-p-1975.html
