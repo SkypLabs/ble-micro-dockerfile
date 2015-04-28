@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM docker.io/ubuntu:trusty
 MAINTAINER skyper@skyplabs.net
 
 RUN apt-get update \
