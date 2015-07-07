@@ -7,10 +7,13 @@ RUN apt-get update \
 	&& apt-get update \
 	&& apt-get install -y git gcc-arm-none-eabi srecord make
 
-RUN useradd -m dev \
-	&& su -c 'cd \
-		&& git clone https://github.com/Seeed-Studio/mbed_ble.git \
-		&& cd mbed_ble \
-		&& git checkout -b softdevice_v6 origin/softdevice_v6 \
-		' dev
+RUN useradd -m dev
+USER dev
+WORKDIR /home/dev
+RUN git clone https://github.com/Seeed-Studio/mbed_ble.git
+WORKDIR /home/dev/mbed_ble
+RUN git checkout -b softdevice_v6 origin/softdevice_v6 \
+	&& mkdir app
+WORKDIR /home/dev/mbed_ble/app
 
+ENTRYPOINT ["make"]
