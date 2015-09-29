@@ -16,4 +16,9 @@ And if you want to specify a *target name* to **make** :
 
 	docker run --rm -v $(pwd):/home/dev/mbed_ble/app docker.io/skyplabs/ble-micro <target name>
 
-  [1]: http://www.seeedstudio.com/depot/Seeed-Micro-BLE-Module-w-CortexM0-Based-nRF51822-SoC-p-1975.html
+## License
+
+[MIT][2]
+
+ [1]: http://www.seeedstudio.com/depot/Seeed-Micro-BLE-Module-w-CortexM0-Based-nRF51822-SoC-p-1975.html
+ [2]: http://opensource.org/licenses/MIT
