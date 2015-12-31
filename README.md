@@ -2,7 +2,7 @@
 
 This image provides a development environment to build software for the [Seeed Studio's BLE Micro][1].
 
-# How to
+## How to
 
 	docker run --rm -v <local path>:/home/dev/mbed_ble/app docker.io/skyplabs/ble-micro
 
