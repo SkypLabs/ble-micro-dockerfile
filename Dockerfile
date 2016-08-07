@@ -1,6 +1,8 @@
 FROM docker.io/ubuntu:trusty
 MAINTAINER skyper@skyplabs.net
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update \
     && apt-get install -y software-properties-common \
     && add-apt-repository -y ppa:terry.guo/gcc-arm-embedded \
