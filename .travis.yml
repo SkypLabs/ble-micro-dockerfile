@@ -5,4 +5,13 @@ language: cpp
 services:
   - docker
 
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y curl
+
+install: true
+
 script: docker run --rm -u $(id -u):$(id -g) -v $(pwd)/test:/home/dev/mbed_ble/app skyplabs/ble-micro
+
+after_success:
+  - ./scripts/docker-trigger.sh
