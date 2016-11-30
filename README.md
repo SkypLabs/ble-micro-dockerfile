@@ -8,7 +8,7 @@ This image provides a development environment to build software for the [Seeed S
 
 	docker run --rm -v <local path>:/home/dev/mbed_ble/app docker.io/skyplabs/ble-micro
 
-The *local path* refers the folder on your host system which holds the source code of your application with a **Makefile**.
+*local path* refers to the folder on your host system which holds the source code of your application and containing a **Makefile**.
 
 If you already are in this folder :
 
