@@ -1,4 +1,4 @@
 PROJECT = ble_beacon
 MBED_BLE = ../mbed_ble
-OBJECTS += main.o
+OBJECTS += $(MBED_BLE)/demos/beacon/main.o
 include $(MBED_BLE)/Makefile
