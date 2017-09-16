@@ -13,7 +13,7 @@ before_install:
 install: true
 
 script:
-  - docker run --rm -u $(id -u):$(id -g) -v $(pwd)/test:/home/dev/mbed_ble/app ble-micro
+  - docker run --rm -u $(id -u):$(id -g) -v $(pwd)/test:/usr/src/app ble-micro
 
 after_success:
   - ./scripts/docker-trigger.sh
