@@ -12,7 +12,7 @@ before_install:
 install: true
 
 script:
-  - docker build -t ble-micro
+  - docker build -t ble-micro .
   - docker run --rm -u $(id -u):$(id -g) -v $(pwd)/test:/home/dev/mbed_ble/app ble-micro
 
 after_success:
