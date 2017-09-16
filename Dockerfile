@@ -10,13 +10,11 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y git gcc-arm-none-eabi srecord make
 
-RUN useradd -m dev
-USER dev
-WORKDIR /home/dev
+WORKDIR /usr/src
 RUN git clone https://github.com/Seeed-Studio/mbed_ble.git
-WORKDIR /home/dev/mbed_ble
+WORKDIR /usr/src/mbed_ble
 RUN git checkout -b softdevice_v6 origin/softdevice_v6 \
-    && mkdir app
-WORKDIR /home/dev/mbed_ble/app
+    && find . -type d -exec chmod 777 {} \;
+WORKDIR /usr/src/app
 
 ENTRYPOINT ["make"]
