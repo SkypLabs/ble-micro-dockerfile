@@ -1,6 +1,6 @@
 # BLE Micro Development Environment
 
-[![Build Status](https://travis-ci.org/SkypLabs/ble-micro-dockerfile.svg)](https://travis-ci.org/SkypLabs/ble-micro-dockerfile)
+[![Code Coverage](https://api.codacy.com/project/badge/Grade/bdffc169e5e749a0ae7bdbfc40cf21a9)](https://www.codacy.com/app/skyper/ble-micro-dockerfile?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SkypLabs/ble-micro-dockerfile&amp;utm_campaign=Badge_Grade) [![Build Status](https://travis-ci.org/SkypLabs/ble-micro-dockerfile.svg)](https://travis-ci.org/SkypLabs/ble-micro-dockerfile)
 
 This image provides a development environment to build software for the [Seeed Studio's BLE Micro][ble-micro].
 
