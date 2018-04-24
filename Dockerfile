@@ -1,5 +1,7 @@
 FROM docker.io/ubuntu:trusty
-MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
+
+LABEL net.skyplabs.maintainer-name="Paul-Emmanuel Raoul"
+LABEL net.skyplabs.maintainer-email="skyper@skyplabs.net"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
