@@ -3,7 +3,7 @@ FROM docker.io/ubuntu:trusty
 LABEL net.skyplabs.maintainer-name="Paul-Emmanuel Raoul"
 LABEL net.skyplabs.maintainer-email="skyper@skyplabs.net"
 
-ARG DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends software-properties-common \
