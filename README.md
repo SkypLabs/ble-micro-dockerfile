@@ -8,7 +8,7 @@ This image provides a development environment to build software for the [Seeed S
 
     docker run --rm -u $(id -u):$(id -g) -v <local path>:/usr/src/app docker.io/skyplabs/ble-micro
 
-*local path* refers to the folder on your host system which holds the source code of your application and containing a **Makefile**.
+*local path* refers to the folder on your host system which holds the source code of your application and containing a `Makefile`.
 
 If you already are in this folder :
 
@@ -22,5 +22,5 @@ And if you want to specify a *target name* to **make** :
 
 [MIT][MIT]
 
- [ble-micro]: http://www.seeedstudio.com/depot/Seeed-Micro-BLE-Module-w-CortexM0-Based-nRF51822-SoC-p-1975.html
- [MIT]: http://opensource.org/licenses/MIT
+ [ble-micro]: https://www.seeedstudio.com/depot/Seeed-Micro-BLE-Module-w-CortexM0-Based-nRF51822-SoC-p-1975.html
+ [MIT]: https://opensource.org/licenses/MIT
