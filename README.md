@@ -22,5 +22,5 @@ And if you want to specify a *target name* to **make** :
 
 [MIT][MIT]
 
- [ble-micro]: https://www.seeedstudio.com/depot/Seeed-Micro-BLE-Module-w-CortexM0-Based-nRF51822-SoC-p-1975.html
+ [ble-micro]: http://wiki.seeedstudio.com/BLE_Micro/
  [MIT]: https://opensource.org/licenses/MIT
