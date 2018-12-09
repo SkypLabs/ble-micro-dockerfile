@@ -10,7 +10,9 @@ RUN apt-get update \
     && add-apt-repository -y ppa:terry.guo/gcc-arm-embedded \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6D1D8367A3421AFB \
     && apt-get update \
-    && apt-get install -y --no-install-recommends git gcc-arm-none-eabi srecord make
+    && apt-get install -y --no-install-recommends git gcc-arm-none-eabi srecord make \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src
 RUN git clone https://github.com/Seeed-Studio/mbed_ble.git
